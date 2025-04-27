@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_mrp_production_form_quick_validate" model="ir.ui.view">
+        <field name="name">mrp.production.form.quick.validate</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_quick_validate"
+                        type="object"
+                        string="Quick Validate"
+                        class="btn-primary"
+                        groups="mrp_quick_validate_lot_novator.group_mrp_quick_validate_admin"
+                        attrs="{'invisible': [('state', 'not in', ('progress', 'to_close'))]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
