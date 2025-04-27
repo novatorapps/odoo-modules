@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_mrp_production_quick_validate,access.mrp.production.quick.validate,mrp.model_mrp_production,mrp_quick_validate_lot_novator.group_mrp_quick_validate_admin,1,1,1,0
